@@ -14,7 +14,7 @@ This project simulates YaYa webhook events and validates them with HMAC signatur
 
 ```bash
 git clone https://github.com/natnael-bayisa/yaya_webhook
-cd yaya-webhook
+cd yaya_webhook
 npm install
 ```
 
