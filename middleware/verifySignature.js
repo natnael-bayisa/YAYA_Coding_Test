@@ -1,3 +1,4 @@
+require("dotenv").config({ path: ".env", quiet: true });
 const crypto = require("crypto");
 
 module.exports = function verifySignature(req, res, next) {

@@ -1,3 +1,4 @@
+require("dotenv").config({ path: ".env", quiet: true });
 const ipRangeCheck = require("ip-range-check");
 
 module.exports = function verifyIp(req, res, next) {

@@ -1,5 +1,10 @@
-
 const seen = new Map();
+
+//Time To Live
+`
+If an event ID is re-sent within 10 minutes, it will be considered a duplicate (Duplicate ignored).
+If it's re-sent after 10 minutes, it will be treated as a new event because the old ID has expired.
+`
 const TTL = 600; // 10 minutes
 
 function cleanup() {

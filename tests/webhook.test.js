@@ -2,6 +2,7 @@ require("dotenv").config({ path: ".env", quiet: true });
 const request = require("supertest");
 const crypto = require("crypto");
 const app = require("../app");
+
 // Secret must match your .env or app configuration
 const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
 
@@ -16,7 +17,6 @@ function flatten(obj) {
 }
 
 // Generate HMAC signature for payload
-
 function generateHmac(payload) {
   const flat = flatten(payload);
   return crypto

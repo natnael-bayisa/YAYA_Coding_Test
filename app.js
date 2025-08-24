@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
-//controller(s)
+//controller
 const webhookController = require("./controllers/webhookController");
 
 //middlewares
